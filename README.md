@@ -15,6 +15,8 @@ If using os x, needs to add this to .bash_profile:
 ```
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 ```
 
 pyenv install 3.6.0
@@ -23,3 +25,14 @@ pyenv install 3.6.0
 pyenv virtualenv 3.6.0 homolog-me
 
 pyenv activate homolog-me
+
+
+Install virtualenvwrapper
+```
+pip install virtualenvwrapper
+```
+
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
