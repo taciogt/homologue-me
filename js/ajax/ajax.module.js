@@ -1,0 +1,1 @@
+angular.module('homologme.ajax', []);
