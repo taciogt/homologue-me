@@ -12,6 +12,7 @@
     "angular-mocks": "^1.6.4",
     "angular-ui-router": "^0.4.2",
     "codacy-coverage": "^2.0.1",
+    "eslint": "^3.19.0",
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.8",
     "gulp-webserver": "^0.9.1",
@@ -26,7 +27,8 @@
   "scripts": {
     "test": "karma start --single-run",
     "send_coverage_report": "cat build/reports/coverage/report-lcov/lcov.info | ./node_modules/.bin/codacy-coverage",
-    "test_watcher": "karma start --no-single-run"
+    "test_watcher": "karma start --no-single-run",
+    "lint": "./node_modules/.bin/eslint ./**.js"
   },
   "repository": {
     "type": "git",
