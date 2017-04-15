@@ -17,12 +17,14 @@
     "jasmine-core": "^2.5.2",
     "karma": "^1.6.0",
     "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-spec-reporter": "0.0.31"
   },
   "scripts": {
-    "test": "karma start"
+    "test": "karma start --single-run",
+    "test_watcher": "karma start --no-single-run"
   },
   "repository": {
     "type": "git",

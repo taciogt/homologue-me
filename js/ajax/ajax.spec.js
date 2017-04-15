@@ -2,7 +2,7 @@ describe('Ajax factory', function() {
 
     var AjaxModel;
     var $httpBackend, $rootScope, createController, authRequestHandler;
-    
+
     beforeEach(angular.mock.module('homologme.ajax'));
 
     beforeEach(inject(function(_AjaxModel_) {
