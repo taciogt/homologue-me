@@ -4,4 +4,4 @@ node_js:
 script:
   - npm run-script lint
 after_success:
-  - npm send_coverage_report
+  - npm run-script send_coverage_report
