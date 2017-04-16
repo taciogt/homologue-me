@@ -19,11 +19,12 @@ module.exports = function(config) {
             './node_modules/angular-ui-router/release/angular-ui-router.js', // ui-router
             './node_modules/angular-mocks/angular-mocks.js',
             'js/app.js',
-            'js/ajax/ajax.module.js',
-            'js/ajax/ajax.model.js',
+            'js/**/*.module.js',
+            'js/**/*.model.js',
+            'js/**/*.controller.js',
+            'js/**/*.directive.js',
             'js/**/*.spec.js',
         ],
-
 
         // list of files to exclude
         exclude: [
@@ -33,7 +34,7 @@ module.exports = function(config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'js/**/*.js': ['coverage']
+            'js/**/!(*spec|*mock).js': ['coverage'],
         },
 
 
