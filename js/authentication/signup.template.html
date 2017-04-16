@@ -1,4 +1,29 @@
-<div>
+<div class="box">
+    <h2>Cadastro</h2>
 
-    Diretiva de Signup
+    <div class="field">
+        <p class="control has-icons-left">
+            <input class="input" type="email" placeholder="Email" ng-model="vc.authModel.newEmail">
+            <span class="icon is-small is-left">
+                <i class="fa fa-envelope"></i>
+            </span>
+        </p>
+    </div>
+    <div class="field">
+        <p class="control has-icons-left">
+            <input class="input" type="password" placeholder="Password" ng-model="vc.authModel.newPassword">
+            <span class="icon is-small is-left">
+                <i class="fa fa-lock"></i>
+            </span>
+        </p>
+    </div>
+    <div class="field">
+        <p class="control">
+            <button class="button is-success">
+                Login
+            </button>
+        </p>
+    </div>
+
+    <button class="button" ng-click="vc.authModel.printModel()">Teste</button>
 </div>

@@ -2,5 +2,5 @@ angular.module('homologme.authentication').controller('SignUpController', SignUp
 
 function SignUpController(AuthModel) {
     var vc = this;
-    this.model = AuthModel;
+    this.authModel = AuthModel;
 }

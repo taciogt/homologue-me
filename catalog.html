@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="homologme-dev">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.min.css.map">
+    <!-- Compiled and minified JS -->
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules/angular-mocks/angular-mocks.js"></script>
+
+    <script src="js/ajax/ajax.module.js"></script>
+    <script src="js/ajax/ajax.model.js"></script>
+    <script src="js/authentication/auth.module.js"></script>
+    <script src="js/authentication/auth.model.js"></script>
+    <script src="js/authentication/signup.controller.js"></script>
+    <script src="js/authentication/signup.directive.js"></script>
+    <!-- main angular app-->
+    <script src="js/app.js"></script>
+    <!-- mocked ajax calls -->
+    <script src="js/authentication/signup.mock.js"></script>
+
+</head>
+<body ng-controller="appController as app">
+    <h1 class="title">Hello, World!</h1>
+    <h2 class="subtitle">Componente de Login</h2>
+    <sign-up></sign-up>
+</body>
+</html>
