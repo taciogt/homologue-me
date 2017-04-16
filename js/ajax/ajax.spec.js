@@ -28,10 +28,10 @@ describe('Ajax factory', function() {
     });
 
     it('can make a mocked GET', function() {
-        var promise = AjaxModel.get('/')
+        var promise = AjaxModel.get('/');
         promise.then(function(result){
             expect(result.data.message).toBe('success mock');
-        })
+        });
         $httpBackend.flush();
     });
 
