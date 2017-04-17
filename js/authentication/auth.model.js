@@ -1,16 +1,19 @@
 angular.module('homologme.authentication').factory('AuthModel', function(AjaxModel){
 
     var m = {
-        default: '',
-        email: null,
-        printModel: printModel
+        newUsername: null,
+        newEmail: null,
+        newPassword: null,
+        signUp: signUp
     };
 
-    function printModel(){
+    function signUp() {
+        console.log('Sign Up Method');
         console.log(m);
-        console.log('teste');
-        AjaxModel.get('/').then(function(result){
+
+        AjaxModel.post('/signup').then(function(result){
             console.log(result);
+            console.log(result.data);
         });
     }
 

@@ -9,11 +9,6 @@ describe('Ajax factory', function() {
         AjaxModel = _AjaxModel_;
     }));
 
-    it('has a dummy spec to test 2 + 2', function() {
-        // An intentionally failing test. No code within expect() will never equal 4.
-        expect(2+2).toEqual(4);
-    });
-
     beforeEach(inject(function($injector) {
         // Set up the mock http service responses
         $httpBackend = $injector.get('$httpBackend');

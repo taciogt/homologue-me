@@ -1,26 +1,29 @@
 <div class="box">
-    <h2>Cadastro</h2>
+    <h2>Sign Up</h2>
 
     <div class="field">
-        <p class="control has-icons-left">
-            <input class="input" type="email" placeholder="Email" ng-model="vc.authModel.newEmail">
-            <span class="icon is-small is-left">
-                <i class="fa fa-envelope"></i>
-            </span>
+        <label class="label">Username</label>
+        <p class="control">
+            <input class="input" type="text" placeholder="Username" ng-model="vc.authModel.newUsername">
+        </p>
+
+    </div>
+    <div class="field">
+        <label class="label">Email</label>
+        <p class="control">
+            <input class="input" type="text" placeholder="Email" ng-model="vc.authModel.newEmail">
         </p>
     </div>
     <div class="field">
-        <p class="control has-icons-left">
+        <label class="label">Password</label>
+        <p class="control">
             <input class="input" type="password" placeholder="Password" ng-model="vc.authModel.newPassword">
-            <span class="icon is-small is-left">
-                <i class="fa fa-lock"></i>
-            </span>
         </p>
     </div>
     <div class="field">
         <p class="control">
-            <button class="button is-success">
-                Login
+            <button class="button is-success" ng-click="vc.authModel.signUp()">
+                Cadastrar
             </button>
         </p>
     </div>

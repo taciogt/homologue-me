@@ -23,6 +23,7 @@ module.exports = function(config) {
             'js/**/*.model.js',
             'js/**/*.controller.js',
             'js/**/*.directive.js',
+            'js/**/*.mock.js',
             'js/**/*.spec.js',
         ],
 

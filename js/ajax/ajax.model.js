@@ -12,7 +12,20 @@ angular.module('homologme.ajax').factory('AjaxModel', function($http){
         return promise;
     }
 
+    function post(url, params){
+        if(!params){
+            params = {};
+        }
+        var promise = $http({
+            method: 'POST',
+            url: url,
+            data: params
+        });
+        return promise;
+    }
+
     return {
-        get: get
+        get: get,
+        post: post
     };
 });
