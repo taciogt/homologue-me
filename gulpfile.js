@@ -14,7 +14,7 @@ gulp.task('webserver', function() {
         .pipe(webserver({
             livereload: true,
             directoryListing: true,
-            open: true,
-            fallback: 'index.html'
+            open: 'http://localhost:8000/catalog.html',
+            fallback: 'catalog.html'
         }));
 });

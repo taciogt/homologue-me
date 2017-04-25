@@ -26,8 +26,28 @@
 
 </head>
 <body ng-controller="appController as app">
-    <h1 class="title">Hello, World!</h1>
-    <h2 class="subtitle">Componente de Login</h2>
-    <sign-up></sign-up>
+
+<div class="columns">
+
+    <div class="column is-one-quarter">
+        <aside class="menu">
+            <p class="menu-label">
+                Authentication
+            </p>
+            <ul class="menu-list">
+
+                <li><a>Sign In</a></li>
+                <li><a class="is-active">Sign Up</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <div class="column auto">
+        <h1 class="title">Components Catalog</h1>
+        <h2 class="subtitle">Sign Up Component</h2>
+        <sign-up></sign-up>
+    </div>
+</div>
+
 </body>
 </html>
