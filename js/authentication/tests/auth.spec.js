@@ -1,24 +1,18 @@
 describe('AuthModel factory', function() {
 
     var AuthModel;
-    var $httpBackend, authRequestHandler;
+    var $httpBackend;
 
     beforeEach(function(){
         angular.mock.module('homologme.ajax');
         angular.mock.module('homologme.authentication');
-
-        // AuthModel = $injector.get('AuthModel');
+        angular.mock.module('homologme.authentication.mocks');
     });
 
     beforeEach(inject(function($injector) {
         AuthModel = $injector.get('AuthModel');
-        // Set up the mock http service responses
         $httpBackend = $injector.get('$httpBackend');
-        signUpMocks($httpBackend);
-        // backend definition common for all tests
-        // authRequestHandler = $httpBackend.when('GET', '/')
-        //     .respond({message: 'success mock'});
-
+        $injector.get('AuthenticationMock').setupMocks();
     }));
 
     it('should exist', function() {
