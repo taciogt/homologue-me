@@ -27,27 +27,39 @@
 </head>
 <body ng-controller="appController as app">
 
-<div class="columns">
-
-    <div class="column is-one-quarter">
-        <aside class="menu">
-            <p class="menu-label">
-                Authentication
-            </p>
-            <ul class="menu-list">
-
-                <li><a>Sign In</a></li>
-                <li><a class="is-active">Sign Up</a></li>
-            </ul>
-        </aside>
+<div class="container">
+    <div class="tabs">
+        <ul>
+            <li><a>Section A</a></li>
+            <li><a>Section B</a></li>
+            <li><a>Section C</a></li>
+            <li class="is-active"><a>Catalog</a></li>
+        </ul>
     </div>
 
-    <div class="column auto">
-        <h1 class="title">Components Catalog</h1>
-        <h2 class="subtitle">Sign Up Component</h2>
-        <sign-up></sign-up>
+    <div class="columns">
+
+        <div class="column is-one-quarter">
+            <aside class="menu">
+                <p class="menu-label">
+                    Authentication
+                </p>
+                <ul class="menu-list">
+
+                    <li><a>Sign In</a></li>
+                    <li><a class="is-active">Sign Up</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="column auto">
+            <h1 class="title">Components Catalog</h1>
+            <h2 class="subtitle">Sign Up Component</h2>
+            <sign-up></sign-up>
+        </div>
     </div>
 </div>
+
 
 </body>
 </html>
