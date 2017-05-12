@@ -18,13 +18,13 @@ module.exports = function(config) {
             './node_modules/angular/angular.js',
             './node_modules/angular-ui-router/release/angular-ui-router.js', // ui-router
             './node_modules/angular-mocks/angular-mocks.js',
-            'js/app.js',
-            'js/**/*.module.js',
-            'js/**/*.model.js',
-            'js/**/*.controller.js',
-            'js/**/*.directive.js',
-            'js/**/*.mock.js',
-            'js/**/*.spec.js',
+            'static/js/app.js',
+            'static/js/**/*.module.js',
+            'static/js/**/*.model.js',
+            'static/js/**/*.controller.js',
+            'static/js/**/*.directive.js',
+            'static/js/**/*.mock.js',
+            'static/js/**/*.spec.js',
         ],
 
         // list of files to exclude
