@@ -32,6 +32,8 @@ function devhelp {
     echo -e "${GREEN}gitstats${RESTORE}            Faz um git fetch + git status. Util pra evitar surpresas"
     echo -e "                    antes de um push."
     echo -e ""
+    echo -e "${GREEN}runserver${RESTORE}           Runs the Django Webserver for development"
+    echo -e ""
     echo -e "${GREEN}rebuild_venv${RESTORE}            Recria o virtualenv do Viva Decora"
     echo -e ""
 }
@@ -55,6 +57,11 @@ function echo_yellow {
 
 function now_seconds {
     date +%s | cut -b1-13
+}
+
+function runserver(){
+    cd homologme
+    ./manage.py runserver
 }
 
 function rebuild_venv(){
