@@ -11,7 +11,7 @@ To contribute to the frontend side, you must have this dependencies installed:
 # If you want to clone, run:
 $ git clone https://github.com/taciogt/homologue-me.git
 # Install the dependencies
-$ npm i
+$ npm install
 ```
 
 ## Run the Frontend-only dev environment
@@ -26,4 +26,11 @@ This command will start a local server for static files at port :8000 and will o
 To execute all javascript tests, run:
  ```bash
 $ npm test
+```
+
+## Run the Backend Environment
+
+To run the backend webserver just run
+```bash
+$ . dev.sh && runserver
 ```
