@@ -24,7 +24,7 @@ module.exports = function(config) {
             'static/js/**/*.controller.js',
             'static/js/**/*.directive.js',
             'static/js/**/*.mock.js',
-            'static/js/**/*.spec.js',
+            'static/js/**/*.spec.js'
         ],
 
         // list of files to exclude
@@ -35,7 +35,7 @@ module.exports = function(config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'js/**/!(*spec|*mock).js': ['coverage'],
+            'static/js/**/!(*spec|*mock).js': ['coverage'],
         },
 
 
