@@ -39,6 +39,8 @@ To contribute to the backend side, you must have this dependencies installed:
 ### Initial Set Up
 ```bash
 $ mkvirtualenv homologme
+$ pip install -r requirements.txt
+$ ./manage.py migrate
 $ deactivate
 ```
 
