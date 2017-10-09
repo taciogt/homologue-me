@@ -49,3 +49,8 @@ $ deactivate
 $ workon homologme
 $ . dev.sh && runserver
 ```
+
+### Run inside a docker container
+```bash
+$ docker-compose up
+```
