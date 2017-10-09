@@ -30,7 +30,20 @@ $ npm test
 
 ## Run the Backend Environment
 
-To run the backend webserver just run
+To contribute to the backend side, you must have this dependencies installed:
+
+- [Git](https://git-scm.com/downloads)
+- [Python 3.4](https://www.python.org/downloads/)
+- [virtualenvwrapper](http://virtualenvwrapper.readthedocs.io/en/latest/index.html)
+
+### Initial Set Up
 ```bash
+$ mkvirtualenv homologme
+$ deactivate
+```
+
+### Run the backend server
+```bash
+$ workon homologme
 $ . dev.sh && runserver
 ```
