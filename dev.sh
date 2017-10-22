@@ -23,6 +23,8 @@ function devhelp {
     echo -e ""
     echo -e "${GREEN}gitstats${RESTORE}            Executes a git fetch and git status."
     echo -e ""
+    echo -e "${GREEN}front_server${RESTORE}        Runs the static files' webserver for frontend development"
+    echo -e ""
     echo -e "${GREEN}runserver${RESTORE}           Runs the Django's server for development"
     echo -e ""
     echo -e "${GREEN}rebuild_venv${RESTORE}        Clear the virtualenv and reinstall the project dependencies."
@@ -38,6 +40,10 @@ function gitstats {
 
 function build_docker {
     docker build . --tag homologme
+}
+
+function front_server(){
+    gulp webserver
 }
 
 function runserver(){
