@@ -9,6 +9,17 @@
     //     console.log('Hello, Catalog');
     // });
 
+    mainAppDev.config(function($stateProvider){
+        var signUpState = {
+            name: 'sign-up',
+            url: '/sign-up',
+            template: '<sign-up></sign-up>'
+        };
+
+        $stateProvider.state(signUpState);
+
+    });
+
     mainAppDev.run(function($httpBackend, AuthenticationMock){
         console.log('settings backend mocks');
         AuthenticationMock.setupMocks();
