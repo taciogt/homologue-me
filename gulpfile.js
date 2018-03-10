@@ -14,8 +14,19 @@ gulp.task('webserver', function() {
         .pipe(webserver({
             livereload: true,
             directoryListing: true,
-            open: '/catalog.html',
+            open: '/static/index.html',
             fallback: 'catalog.html',
             port: 8001
+        }));
+});
+
+gulp.task('catalog', function() {
+    gulp.src('')
+        .pipe(webserver({
+            livereload: true,
+            directoryListing: true,
+            open: '/catalog.html',
+            fallback: 'catalog.html',
+            port: 8002
         }));
 });
